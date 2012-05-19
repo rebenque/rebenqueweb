@@ -6,8 +6,8 @@
 /* Tipography */
 
 body {
-	font-family: 'Prata', georgia, serif;
- 	font-size: 10pt;
+	font-family: Prata, georgia, serif;
+	font-size: 10pt;
 	color: #777;
 }
 p {
@@ -16,7 +16,7 @@ p {
 h1 {
 	font-weight: normal;
 	color: #555;
-	padding: 0.2em 0px 0.2em 0px;
+	padding: 0.2em 0px;
 	font-size: 1.2em;
 }
 h1:first-letter {
@@ -25,7 +25,7 @@ h1:first-letter {
 h2 {
 	font-weight: normal;
 	color: #555;
-	padding: 0.2em 0px 0.2em 0px;
+	padding: 0.2em 0px;
 	font-size: 1.2em;
 }
 h2:first-letter {
@@ -48,6 +48,7 @@ h3 {
 }
 
 /* LoVE? Ha! */
+
 #content  a { 
 	text-decoration: none;
 	color: #333;
@@ -62,7 +63,6 @@ h3 {
 }
 #content a:visited {
 }
-
 
 /* Images */
 
@@ -173,6 +173,7 @@ h3 {
 	margin-left: auto;
 	margin-right: auto;
 	width: 900px;
+	font-family: Prata, georgia, serif;
 }
 #subcolumn_left {
 	margin-left: 0px;
@@ -187,9 +188,6 @@ h3 {
 	margin-bottom: 60px;/* space left with respect to text in about.html*/
 }
 #selfportrait img {
-	/*margin-left: 0px;
-    margin-right: auto;*/
-    /*display: block;*/
 }
 #subcolumn_left p {
 	padding: 0px;
@@ -222,4 +220,3 @@ h3 {
 
 .clear { clear: both; background: none; }
 .clearboth { clear: both; }
-
