@@ -1,3 +1,5 @@
+# RebenqueWeb 1.4 (1 Ago 2012)
+Link to Cargo Collective added
 # RebenqueWeb 1.3 (15 Jun 2012)
 Gratitude updated, Lacota contraluz updated, Raphael section added and new favicon. Index photo changed.
 # RebenqueWeb 1.2 (14 Jul 2012)
