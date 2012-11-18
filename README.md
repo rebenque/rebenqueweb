@@ -1,3 +1,5 @@
+# RebenqueWeb 1.6 (18 Nov 2012)
+Two photos and two stamps added, plus new welcome pic of myself.
 # RebenqueWeb 1.5 (5 Ago 2012)
 Twitter and Cargo icons added with hover CSS feature
 # RebenqueWeb 1.4 (1 Ago 2012)
