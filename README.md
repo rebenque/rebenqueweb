@@ -1,3 +1,5 @@
+# RebenqueWeb 1.7 (2 Dic 2012)
+Swim&Smoke added.
 # RebenqueWeb 1.6 (18 Nov 2012)
 Two photos and two stamps added, plus new welcome pic of myself.
 # RebenqueWeb 1.5 (5 Ago 2012)
