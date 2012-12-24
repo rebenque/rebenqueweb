@@ -1,5 +1,5 @@
 # RebenqueWeb 1.9 (24 Dic 2012)
-Paniagua-Chiarri added.
+Paniagua-Chiarri added. Portrait photo corrected.
 # RebenqueWeb 1.7 (2 Dic 2012)
 Swim&Smoke added.
 # RebenqueWeb 1.6 (18 Nov 2012)
