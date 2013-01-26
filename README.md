@@ -1,3 +1,5 @@
+# RebenqueWeb 2.0 (16 Jan 2013)
+Series imported from Cargo. Photocall Nochevieja 2012 added. Two gratitude links more. Luis Bedoya link updated.
 # RebenqueWeb 1.9 (24 Dic 2012)
 Paniagua-Chiarri added. Portrait photo corrected.
 # RebenqueWeb 1.7 (2 Dic 2012)

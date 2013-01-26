@@ -70,7 +70,7 @@ h3 {
 	border: 0px;
 	border-color: #AAA;
 	border-style: solid;
-	width: inherit;
+	width: 900px;
 	height: auto;
 }
 #stamp img {
@@ -78,7 +78,7 @@ h3 {
 	border-bottom: 1px;
 	border-color: #AAA;
 	border-style: solid;
-	width: inherit;
+	width: 500px;
 	height: auto;
 }
 #thumbnail img {
@@ -203,6 +203,40 @@ h3 {
 #navcontainer a:hover {
 	color: #A62317;
 }
+
+#navcontainer ul ul {
+	background:	inherit;
+	list-style-type: none;
+	width: 80px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 1em;
+	padding-bottom: 0.6em;
+	font-size: 0.9em;
+}
+#navcontainer ul ul a { 
+	display: block;
+	color: #777;
+	width: inherit;
+	padding: 0px 0px;
+	text-decoration: none;
+}
+#subactive a {
+	display: block; 
+	color: #555;
+	width: inherit;
+	padding: 0.4em 0px;
+	text-decoration: none;
+	/*text-indent: 1em;*/
+	font-size: 1.1em;
+}
+#subactive a:first-letter {
+	font-size: 1.4em;
+}
+#navcontainer ul ul a:hover {
+	color: #A62317;
+}
+
 #rightcolumn { 
 	float: right;
 	margin: 20px;
