@@ -1,3 +1,5 @@
+# RebenqueWeb 2.2 (3 Mar 2013)
+Photocall Nico y Leti and Photocall cumple Raquel added
 # RebenqueWeb 2.1 (6 Feb 2013)
 Bug corrected in "a day at the races"
 # RebenqueWeb 2.0 (16 Jan 2013)
