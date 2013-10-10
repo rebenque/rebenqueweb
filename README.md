@@ -1,3 +1,5 @@
+# RebenqueWeb 1.15 (10 Oct 2013)
+James Hunt added, double trailing dots corrected in "series" text and stampt v bis added
 # RebenqueWeb 1.15 (29 Sep 2013)
 Tres Ciervos added
 # RebenqueWeb 1.14 (1 Jun 2013)
