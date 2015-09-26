@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry excluding="utils/|model/|factory/|factory/cars/" kind="src" path=""/>
+	<classpathentry excluding="cars/" kind="src" path="factory"/>
+	<classpathentry kind="src" path="factory/cars"/>
+	<classpathentry kind="src" path="model"/>
+	<classpathentry kind="src" path="utils"/>
+	<classpathentry kind="con" path="org.eclipse.wst.jsdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path=""/>
+</classpath>
