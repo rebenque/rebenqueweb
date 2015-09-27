@@ -126,6 +126,17 @@ div.bb_nav_fixed_top h1 {
   padding-right: 0;
 }
 
+.content img {
+	opacity: 1;
+	width: 100%;
+	transition: opacity .20s ease-in-out;
+	-moz-transition: opacity .20s ease-in-out;
+	-webkit-transition: opacity .20s ease-in-out;
+}
+.content:hover img {
+   opacity: 0.2;
+}
+
 .content .caption, .content .caption_about {
 	position: absolute;
 	top: 0;
@@ -174,10 +185,10 @@ div.bb_nav_fixed_top h1 {
 	text-align: center;
 	//background-color: green;
 }
-.content .caption_about p{
+.content .caption_about p {
 	font-size: 80%;
 	position: absolute;
-  top: 42.5%;
+  top: 35%;
   //bottom: 0;
   left:0;
   right:0;
@@ -187,17 +198,10 @@ div.bb_nav_fixed_top h1 {
 	text-align: center;
 	//background-color: brown;
 }
+.trick {
+	position: relative;
+}
 
-.content img {
-   opacity: 1;
-	 width: 100%;
-   transition: opacity .20s ease-in-out;
-   -moz-transition: opacity .20s ease-in-out;
-   -webkit-transition: opacity .20s ease-in-out;
-}
-.content:hover img {
-   opacity: 0.2;
-}
 
 /*
  * Embedding video
