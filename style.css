@@ -10,7 +10,7 @@
 p {
 	font-family: 'Merriweather', serif;
 	font-weight: 300;
-	font-size: 8pt;
+	font-size: 9pt;
 	color: #000;
 	margin: 0em 0em 0.5em;
 	padding: 0;
@@ -30,17 +30,17 @@ h1, h2, h6 {
 	padding: 0;
 }
 h1 {
-	font-size: 18pt;
+	font-size: 20pt;
 }
 h2 {
-  font-size: 14pt;
+  font-size: 16pt;
 }
 h6 {
   font-size: 1.18em;
 }
 .navbar-rebenque h6, .footer-rebenque h6 {
 	margin: 0;
-	color: #DDD;
+	color: #CCC;
 }
 .footer-rebenque h6 {
 	font-size: 0.85em;
@@ -111,6 +111,23 @@ hr {
 	padding-top: 70px;
 }
 
+/*
+ * Icons
+ */
+.azm-social i {
+	color: #CCC;
+	-moz-border-radius: 0; -webkit-border-radius: 0; border-radius: 0;
+	/*-o-transition: opacity .2s ease-in-out; -moz-transition: opacity .2s ease-in-out; -webkit-transition: opacity .2s ease-in-out; -ms-transition: opacity .2s ease-in-out; transition: opacity .2s ease-in-out;*/
+}
+/*.azm-social:hover, .azm-social:focus, .azm-social:active { text-decoration:none;opacity: 0.8; color: black; }*/
+.azm-social:hover i {
+	text-decoration:none;
+	color: #000;
+}
+.fa {
+	font-size: 1.0em;
+}
+
 @media (min-width: 768px) {
 	.navbar-rebenque {
 		padding: 25px 0 25px;
@@ -122,12 +139,27 @@ hr {
 	.no-fixed-content {
 		padding-top: 130px;
 	}
-	p {
-		font-size: 9pt;
-	}
 	.double-space-top-bottom {
 		padding: 40px 0 40px;
 	}
+	p {
+		font-size: 10pt;
+	}	
+	h1 {
+		font-size: 22pt;
+	}
+	h2 {
+  	font-size: 17pt;
+	}
+	.lead {
+		font-size: 17pt;
+	}
+	h6 {
+  	font-size: 1.18em;
+	}
+	.footer-rebenque h6 {
+		font-size: 0.95em;
+	}	
 }
 @media (max-device-width: 480px) and (orientation: landscape) {
 	.navbar-rebenque {
@@ -164,25 +196,67 @@ hr {
 	}
 	.double-space-top-bottom {
 		padding: 50px 0 50px;
+	}
+	p {
+		font-size: 11pt;
+	}	
+	h1 {
+		font-size: 22pt;
+	}
+	h2 {
+  	font-size: 18pt;
+	}
+	.lead {
+		font-size: 18pt;
+	}
+	h6 {
+  	font-size: 1.3em;
+	}
+	.footer-rebenque h6 {
+		font-size: 1em;
+	}
+	.fa {
+		font-size: 1.2em;
 	}	
 }
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
 	.navbar-rebenque {
-		padding: 30px 0 30px;
-  	height: 150px;
+		padding: 35px 0 35px;
+  	height: 170px;
 	}	
 	.navbar-rebenque img {
-		width: 90px;
+		width: 100px;
 	}
 	.no-fixed-content {
-		padding-top: 150px;
+		padding-top: 170px;
 	}
 	.space-top-bottom {
 		padding: 30px 0 30px;
 	}
 	.double-space-top-bottom {
 		padding: 60px 0 60px;
+	}	
+	p {
+		font-size: 12pt;
+	}	
+	h1 {
+		font-size: 23pt;
+	}
+	h2 {
+  	font-size: 19pt;
+	}
+	.lead {
+		font-size: 19pt;
+	}
+	h6 {
+  	font-size: 1.3em;
+	}
+	.footer-rebenque h6 {
+		font-size: 1em;
+	}
+	.fa {
+		font-size: 1.2em;
 	}	
 }
 
@@ -363,22 +437,7 @@ hr {
   border: 1px solid rgba(86,61,124,.2);
 }*/
 
-/*
- * Icons
- */
-.azm-social i {
-	color: #DDD;
-	-moz-border-radius: 0; -webkit-border-radius: 0; border-radius: 0;
-	/*-o-transition: opacity .2s ease-in-out; -moz-transition: opacity .2s ease-in-out; -webkit-transition: opacity .2s ease-in-out; -ms-transition: opacity .2s ease-in-out; transition: opacity .2s ease-in-out;*/
-}
-/*.azm-social:hover, .azm-social:focus, .azm-social:active { text-decoration:none;opacity: 0.8; color: black; }*/
-.azm-social:hover i {
-	text-decoration:none;
-	color: #000;
-}
-.fa {
-	font-size: 1.0em;
-}
+
 
 
 /* Reset */
