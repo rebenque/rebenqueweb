@@ -36,11 +36,11 @@ h2 {
   font-size: 16pt;
 }
 h6 {
-  font-size: 1.18em;
+  font-size: 1.22em;
 }
 .navbar-rebenque h6, .footer-rebenque h6 {
 	margin: 0;
-	color: #CCC;
+	color: #BBB;
 }
 .footer-rebenque h6 {
 	font-size: 0.85em;
@@ -66,6 +66,7 @@ h1 a:hover, h2 a:hover, h6 a:hover {
 }
 .navbar-rebenque h6 a:hover, .footer-rebenque h6 a:hover {
 	color: #000;
+	font-weight: 500;
 }
 
 /*
@@ -155,7 +156,7 @@ hr {
 		font-size: 17pt;
 	}
 	h6 {
-  	font-size: 1.18em;
+  	font-size: 1.22em;
 	}
 	.footer-rebenque h6 {
 		font-size: 0.95em;
@@ -210,7 +211,7 @@ hr {
 		font-size: 18pt;
 	}
 	h6 {
-  	font-size: 1.3em;
+  	font-size: 1.33em;
 	}
 	.footer-rebenque h6 {
 		font-size: 1em;
@@ -250,7 +251,7 @@ hr {
 		font-size: 19pt;
 	}
 	h6 {
-  	font-size: 1.3em;
+  	font-size: 1.33em;
 	}
 	.footer-rebenque h6 {
 		font-size: 1em;

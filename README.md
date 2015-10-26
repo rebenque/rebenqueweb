@@ -1,5 +1,3 @@
-# RebenqueWeb 2.0 (23 October 2015)
-Responsive, new design
 # RebenqueWeb 1.15 (10 Oct 2013)
 James Hunt added, double trailing dots corrected in "series" text and stampt v bis added
 # RebenqueWeb 1.15 (29 Sep 2013)
