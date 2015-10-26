@@ -37,12 +37,14 @@ h2 {
 }
 h6 {
   font-size: 1.22em;
+	font-weight: 300;
 }
 .navbar-rebenque h6, .footer-rebenque h6 {
 	margin: 0;
 	color: #AAA;
 }
 .footer-rebenque h6 {
+	font-weight: 200;
 	font-size: 0.85em;
 }
 
