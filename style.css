@@ -57,6 +57,11 @@ a, a:link, a:hover, a:visited {
 }
 p a {
 	font-weight: 400;
+/*	text-emphasis-style: dot;
+	text-emphasis-position: under right; // or `under left`
+	-webkit-text-emphasis-style: dot;
+  -webkit-text-emphasis-position: under; // this works but shouldn't 	
+*/
 }
 p a:hover {
 	font-weight: 700;
