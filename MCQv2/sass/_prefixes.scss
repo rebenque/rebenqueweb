@@ -1,0 +1,73 @@
+// Vendor prefixes for browser-proof flexbox behaviour
+
+@mixin flexbox() {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+@mixin flex-direction($val) {
+    -webkit-flex-direction: $val; /* Safari 6.1+ */
+    -moz-flex-direction: $val;
+    flex-direction: $val;
+}
+
+@mixin flex-wrap($val) {
+    -webkit-flex-wrap: $val; /* Safari 6.1+ */
+    -moz-flex-wrap: $val;
+    flex-wrap: $val;
+}
+
+@mixin flex-flow($values) {
+    -webkit-flex-flow: $values; /* Safari 6.1+ */
+    -moz-flex-flow: $values;
+    flex-flow: $values;
+}
+
+@mixin flex($values) {
+  -webkit-box-flex: $values;
+  -moz-box-flex:  $values;
+  -webkit-flex:  $values;
+  -ms-flex:  $values;
+  flex:  $values;
+}
+
+@mixin order($val) {
+  -webkit-box-ordinal-group: $val;  
+  -moz-box-ordinal-group: $val;     
+  -ms-flex-order: $val;     
+  -webkit-order: $val;  
+  order: $val;
+}
+
+@mixin box_sizing($val) {
+    html {
+      -webkit-box-sizing: $val;
+      -moz-box-sizing: $val;
+      box-sizing: $val;
+    }
+    *, *::before, *::after {
+      -webkit-box-sizing: inherit;
+      -moz-box-sizing: inherit;
+      box-sizing: inherit;
+    }
+}
+
+// Placeholder text
+@mixin placeholder($color: $input-color-placeholder) {
+  // Firefox
+  &::-moz-placeholder {
+    color: $color;
+    opacity: 1; // Override Firefox's unusual default opacity; see https://github.com/twbs/bootstrap/pull/11526
+  }
+  &:-ms-input-placeholder { color: $color; } // Internet Explorer 10+
+  &::-webkit-input-placeholder  {
+        color: $color;
+        //font-family: $font-family-base;
+        //font-size: $font-size-h6;
+        //line-height: 1.5;      
+      
+    } // Safari and Chrome
+}
