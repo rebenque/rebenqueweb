@@ -58,7 +58,7 @@
    align-self: stretch;
  }
 .rbq-align-content-center {
-  align-content: space-around;;
+  align-content: center;
 }
 .rbq-align-content {
   align-content: flex-start;
@@ -194,12 +194,13 @@ ul {
 /*
  * Miscela
  */
- body {
-   color: $theme_solid_color_5;
- }
- p {
-   color: $theme_color_5;
- }
+body {
+  color: $theme_solid_color_5;
+  //font-size:18px;
+}
+p {
+  color: $theme_color_5;
+}
 .rbq-fixed-menu.rbq-top .h-variant {
    //font-family: 'denseregular', Arial, sans-serif;
    letter-spacing: 0.2em;
@@ -289,7 +290,7 @@ $height-fixed-bottom-menu: 4vh;
 }
 $height-fixed-menu: 90px;
 .rbq-background-menu {
-  background-color: rgba(255,255,255,1);
+  background-color: rgba(255,255,255,0.9);
   z-index: 1000 !important;
   height: $height-fixed-menu;
   margin-top: 0;
@@ -301,6 +302,50 @@ $height-fixed-menu: 90px;
 .rbq-z-index-thousand {
   z-index: 1000;
 }
+
+/*
+ * Fading on hover
+ */
+.rbq-fade {
+  position: relative;
+  background-color: rgba(255,255,255,1.0);
+}
+.rbq-fade img {
+  opacity: 1;
+  @include transition(opacity .20s ease-in-out);
+}
+.rbq-fade:hover img {
+   opacity: 0.2;
+}
+
+.special {
+  //position: relative;
+}
+
+.rbq-fade .caption {
+	position: absolute;
+	top: 0;
+  bottom: 0;
+  left:0;
+  right:0;
+  margin: auto;
+  width: 90%;
+  height: 90%;
+	//background: yellow;
+	opacity: 0;
+	//color: #fff;
+	//background-color: rgba(0,0,0,0.8);
+  @include transition(opacity .20s ease-in-out);
+}
+
+.rbq-fade:hover .caption {
+  opacity: 1;
+}
+
+.caption .rbq-array {
+  height: 100% !important;
+}
+
 
 /* ---- Parallax group 1 --- */
 
@@ -359,10 +404,11 @@ $height-fixed-menu: 90px;
   z-index: 3;
 }
 
-#group3 {
+#group3, #group3 .rbq-container {
   //height: 100vh - $height-fixed-top-menu - $height-fixed-bottom-menu;
-  height: 200vh;
+  height: 100vh;
 }
+
 #group3 .rbq-parallax_layer-2 {
   //background-color: $theme_white;
   background-image: url("artwork/hojas.png");
@@ -371,7 +417,23 @@ $height-fixed-menu: 90px;
   //background-position: 50% 50%;
 }
 #group3 .rbq-parallax_layer-1 {
-  background-color: $theme_color_3;
+  background-image: url("artwork/bg_triptico.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  //position: relative;
+  //height: 100vh;
+}
+#group3 .rbq-parallax_layer-1::after {
+  content: "";
+  background-color: $theme_white;
+  opacity: 0.1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
 }
 #group3 .rbq-parallax_layer-2 img {
   //z-index: -900;
@@ -394,6 +456,21 @@ $height-fixed-menu: 90px;
 #group4 {
   z-index: 4; /* slide under group 3 and 5 */
 }
+#group4 .rbq-parallax_layer-2 {
+  //background-color: $theme_white;
+  background-image: url("artwork/hojas.png");
+  background-size: cover;
+  //background-repeat: no-repeat;
+  //background-position: 50% 50%;
+}
+#group4 .rbq-parallax_layer-1 {
+  background-image: url("photo/DSC_0055.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  //height: 100vh;
+}
+
 #group4 .rbq-parallax_layer-1 {
   //background-image: url('artwork/bg_triptico.jpg');
   //background-size: cover;
@@ -401,14 +478,14 @@ $height-fixed-menu: 90px;
   //background-position: 50% 50%;
   //background-color: $theme-color_4;
 }
-#group4 .rbq-array {
-  height: 100vh;
+#group4, #group3 .rbq-container {
+  height:100vh;
 }
 
 /* ---- Parallax group 5 --- */
 
 #group5 {
-  z-index: 4; /* slide under group 3 and 5 */
+  z-index: 3; /* slide under group 3 and 5 */
   background-color: $theme_color_2;
 }
 #group5 .rbq-parallax_layer-1 {
@@ -425,9 +502,23 @@ $height-fixed-menu: 90px;
 /* ---- Parallax group 6 --- */
 
 #group6 {
-  z-index: 4; /* slide under group 3 and 5 */
+  z-index: 2; /* slide under group 3 and 5 */
 }
-
+#group6 {
+  height: 100vh;
+}
+// #group6 .rbq-parallax_layer-0 {
+//   background: rgba(255,255,255,0.8);
+//   //background-image: url('photo/DSC_9220.jpg');
+//   //background-size: cover;
+// }
+// #group6 .rbq-parallax_layer-2 {
+//   //background: rgb(184,223,101);
+//   background-image: url('artwork/LOGO-ICON-MCQ-BN-TRANSP.png');
+//   background-size: 60%;
+//   background-repeat: no-repeat;
+//   background-position: center;
+// }
 
 /* ---- Parallax group 7 --- */
 
@@ -443,6 +534,7 @@ $height-fixed-menu: 90px;
    letter-spacing: 0.2em;
    //font-size: 24px;
 }
+
 
 /* ---- Parallax group 8 --- */
 
@@ -460,7 +552,7 @@ $height-fixed-menu: 90px;
   background-color: $theme_white;
 }
 #group9, #group9 .rbq-container {
-  height: 100vh;
+  height: 110vh;
 }
 #group9 .h-variant {
    //font-family: 'denseregular', Arial, sans-serif;

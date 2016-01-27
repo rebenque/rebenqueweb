@@ -335,7 +335,7 @@
 }
 
 .rbq-align-content-center {
-  align-content: space-around;
+  align-content: center;
 }
 
 .rbq-align-content {
@@ -610,7 +610,7 @@ p {
 }
 
 .rbq-background-menu {
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.9);
   z-index: 1000 !important;
   height: 90px;
   margin-top: 0;
@@ -622,6 +622,50 @@ p {
 
 .rbq-z-index-thousand {
   z-index: 1000;
+}
+
+/*
+ * Fading on hover
+ */
+.rbq-fade {
+  position: relative;
+  background-color: white;
+}
+
+.rbq-fade img {
+  opacity: 1;
+  -webkit-transition: opacity 0.2s ease-in-out;
+  -moz-transition: opacity 0.2s ease-in-out;
+  -o-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.rbq-fade:hover img {
+  opacity: 0.2;
+}
+
+.rbq-fade .caption {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 90%;
+  height: 90%;
+  opacity: 0;
+  -webkit-transition: opacity 0.2s ease-in-out;
+  -moz-transition: opacity 0.2s ease-in-out;
+  -o-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.rbq-fade:hover .caption {
+  opacity: 1;
+}
+
+.caption .rbq-array {
+  height: 100% !important;
 }
 
 /* ---- Parallax group 1 --- */
@@ -668,8 +712,8 @@ p {
   z-index: 3;
 }
 
-#group3 {
-  height: 200vh;
+#group3, #group3 .rbq-container {
+  height: 100vh;
 }
 
 #group3 .rbq-parallax_layer-2 {
@@ -678,7 +722,22 @@ p {
 }
 
 #group3 .rbq-parallax_layer-1 {
-  background-color: rgba(237, 147, 84, 0.5);
+  background-image: url("artwork/bg_triptico.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#group3 .rbq-parallax_layer-1::after {
+  content: "";
+  background-color: rgba(255, 255, 255, 0.5);
+  opacity: 0.1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
 }
 
 #group3 iframe {
@@ -691,13 +750,25 @@ p {
   /* slide under group 3 and 5 */
 }
 
-#group4 .rbq-array {
+#group4 .rbq-parallax_layer-2 {
+  background-image: url("artwork/hojas.png");
+  background-size: cover;
+}
+
+#group4 .rbq-parallax_layer-1 {
+  background-image: url("photo/DSC_0055.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#group4, #group3 .rbq-container {
   height: 100vh;
 }
 
 /* ---- Parallax group 5 --- */
 #group5 {
-  z-index: 4;
+  z-index: 3;
   /* slide under group 3 and 5 */
   background-color: rgba(236, 207, 151, 0.5);
 }
@@ -708,8 +779,12 @@ p {
 
 /* ---- Parallax group 6 --- */
 #group6 {
-  z-index: 4;
+  z-index: 2;
   /* slide under group 3 and 5 */
+}
+
+#group6 {
+  height: 100vh;
 }
 
 /* ---- Parallax group 7 --- */
@@ -745,7 +820,7 @@ p {
 }
 
 #group9, #group9 .rbq-container {
-  height: 100vh;
+  height: 110vh;
 }
 
 #group9 .h-variant {
