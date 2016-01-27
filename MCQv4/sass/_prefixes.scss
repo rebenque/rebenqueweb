@@ -72,11 +72,21 @@
     } // Safari and Chrome
 }
 
+
+@mixin transform($val) {
+  -webkit-transition: $val;
+  -moz-transition: $val;
+  -ms-transition: $val;
+  -o-transition: $val;
+  transition: $val;
+}
+
 /* ---- CSS3 Transition vendor prefixes ---- */
 
 @mixin transition($val) {
   -webkit-transition: $val;
   -moz-transition: $val;
+  -ms-transition: $val;
   -o-transition: $val;
   transition: $val;
 }

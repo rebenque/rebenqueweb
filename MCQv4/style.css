@@ -381,13 +381,14 @@
  */
 .rbq-button {
   background-color: #766055;
-  color: rgba(235, 219, 206, 0.5);
+  color: #ebdbce !important;
   font-size: 20px;
   border: 0px solid transparent;
 }
 .rbq-button:hover, .rbq-button:focus {
   background-color: white;
   text-decoration: none;
+  color: #766055 !important;
 }
 .rbq-button:active {
   outline: 0;
@@ -511,10 +512,78 @@ ul {
 }
 
 /*
+ * Styles for navigation
+ * LoVE? Ha!
+ */
+a, a:link, a:hover, a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
+h1 a:hover,
+h2 a:hover,
+h3 a:hover,
+h4 a:hover,
+h5 a:hover,
+h6 a:hover {
+  font-weight: bold;
+}
+
+/* Trick for the logo */
+#logo img {
+  -webkit-transition: all 0s linear;
+  -moz-transition: all 0s linear;
+  -ms-transition: all 0s linear;
+  -o-transition: all 0s linear;
+  transition: all 0s linear;
+}
+
+#logo:hover img {
+  -webkit-transform: scale(1.1);
+  /* Safari and Chrome */
+  -moz-transform: scale(1.1);
+  /* Firefox */
+  -ms-transform: scale(1.1);
+  /* IE 9 */
+  -o-transform: scale(1.1);
+  /* Opera */
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+/*
+ * Icons
+ */
+.rbq-social i {
+  /*-o-transition: opacity .2s ease-in-out; -moz-transition: opacity .2s ease-in-out; -webkit-transition: opacity .2s ease-in-out; -ms-transition: opacity .2s ease-in-out; transition: opacity .2s ease-in-out;*/
+}
+
+/*.azm-social:hover, .azm-social:focus, .azm-social:active { text-decoration:none;opacity: 0.8; color: black; }*/
+.rbq-social:hover i {
+  text-decoration: none;
+  color: #766055 !important;
+}
+
+/*
  * Miscela
  */
 body {
+  font-size: 18px;
+  line-height: 1.2;
+}
+
+body {
   color: #473930;
+}
+
+p {
+  margin: 0 0 0.6;
+}
+
+@media (min-width: 768px) {
+  .lead {
+    font-size: 27px;
+  }
 }
 
 p {
@@ -636,6 +705,7 @@ p {
   opacity: 1;
   -webkit-transition: opacity 0.2s ease-in-out;
   -moz-transition: opacity 0.2s ease-in-out;
+  -ms-transition: opacity 0.2s ease-in-out;
   -o-transition: opacity 0.2s ease-in-out;
   transition: opacity 0.2s ease-in-out;
 }
@@ -656,6 +726,7 @@ p {
   opacity: 0;
   -webkit-transition: opacity 0.2s ease-in-out;
   -moz-transition: opacity 0.2s ease-in-out;
+  -ms-transition: opacity 0.2s ease-in-out;
   -o-transition: opacity 0.2s ease-in-out;
   transition: opacity 0.2s ease-in-out;
 }
@@ -816,7 +887,6 @@ p {
 #group9 {
   z-index: 4;
   /* slide under group 3 and 5 */
-  background-color: rgba(255, 255, 255, 0.5);
 }
 
 #group9, #group9 .rbq-container {
