@@ -1,0 +1,113 @@
+// ___________________________________
+//
+// Colors
+// ___________________________________
+
+$debug-colors: ( $debug_color_1,
+                $debug_color_2,
+                $debug_color_3,
+                $debug_color_4,
+                $debug_color_5,
+                $debug_color_6,
+                );
+
+$theme-colors: ( $theme_color_1,
+                 $theme_color_2,
+                 $theme_color_3,
+                 $theme_color_4,
+                 $theme_color_5,
+                 $theme_color_6,
+               );
+$theme-solid-colors: (  $theme_solid_color_1,
+                        $theme_solid_color_2,
+                        $theme_solid_color_3,
+                        $theme_solid_color_4,
+                        $theme_solid_color_5,
+                        $theme_solid_color_6,
+                     );
+
+// $theme-colors: ( $debug_color_1,
+//                $debug_color_2,
+//                $debug_color_3,
+//                $debug_color_4,
+//                $debug_color_5,
+//                $debug_color_6,
+//                );
+
+@if $debug {
+  $i: 1;
+  $list-length: length($theme_colors);
+  @each $theme_color in $theme_colors {
+    div[class*='rbq-cell']:nth-child( #{$list-length}n+#{$i} ) {
+      background-color: $theme_color;
+    }
+    div[class*='rbq-dar-cell']:nth-child( #{$list-length}n+#{$i} ) {
+      background-color: $theme_color;
+    }
+    $i: ( $i + 1 );
+  }
+}
+
+$i: 1;
+$list-length: length($debug_colors);
+@each $debug_color in $debug_colors {
+  .debug_color-#{$i} {
+    color: $debug_color !important;
+  }
+  .debug-background-color-#{$i} {
+    background-color: $debug_color !important;
+  }
+  $i: ( $i + 1 );
+}
+
+/* ---- Color classes ---- */
+
+// With some transparency
+$i: 1;
+$list-length: length($theme_colors);
+@each $theme_color in $theme_colors {
+  .rbq-theme-color_#{$i} {
+    color: $theme_color !important;
+  }
+  .rbq-theme-background-color_#{$i} {
+    background-color: $theme_color !important;
+  }
+  $i: ( $i + 1 );
+}
+.rbq-theme-white {
+  color: $theme_white !important;
+}
+.rbq-theme-background-white {
+  background-color: $theme_white !important;
+}
+.rbq-theme-black {
+  color: $theme_black !important;
+}
+.rbq-theme-background-black {
+  background-color: $theme_black !important;
+}
+
+// Solid
+$i: 1;
+$list-length: length($theme_solid_colors);
+@each $theme_solid_color in $theme_solid_colors {
+  .rbq-theme-solid-color_#{$i} {
+    color: $theme_solid_color !important;
+  }
+  .rbq-theme-background-solid-color_#{$i} {
+    background-color: $theme_solid_color !important;
+  }
+  $i: ( $i + 1 );
+}
+.rbq-theme-solid-white {
+  color: $theme_solid_white !important;
+}
+.rbq-theme-background-solid-white {
+  background-color: $theme_solid_white !important;
+}
+.rbq-theme-solid-black {
+  color: $theme_solid_black !important;
+}
+.rbq-theme-background-solid-black {
+  background-color: $theme_solid_black !important;
+}
