@@ -1,0 +1,13 @@
+//
+// Globals
+//
+
+// Body reset
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+// Reset the box-sizing
+@include box-sizing(border-box);

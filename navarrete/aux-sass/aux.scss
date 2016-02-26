@@ -1,0 +1,105 @@
+@charset "UTF-8";
+/* SCSS Document */
+
+
+/*
+ * Vendor prefixes
+ */
+
+
+
+/*
+ * Globals
+ */
+
+@import 'variables';
+
+
+/*
+ * Tipography
+ */
+
+@import 'webfonts';
+@import 'typography';
+
+/*
+ * Colors
+ */
+
+@import 'colors';
+
+/*
+ * Styles for navigation
+ * LoVE? Ha!
+ */
+
+
+
+/*
+ * Splash
+ */
+
+/*
+ * Cover
+ */
+
+/*
+ * Responsive images
+ */
+img[class^='rbq-responsive'] {
+    height: auto;
+    width: 100%;
+}
+
+
+/*
+ * Icons
+ */
+
+
+/*
+ * XS lay-out
+ */
+.rbq-container {
+  height: 100vh;
+}
+h1.pad_left_1em {
+  padding-left: 1em;
+}
+h1.pad_left_2em {
+  padding-left: 2em;
+}
+h1.pad_left_3em {
+  padding-left: 3em;
+}
+h1.pad_left_4em {
+  padding-left: 4em;
+}
+h1.pad_right_1em {
+  padding-right: 1em;
+}
+#welcome {
+  background-image: url("img/welcome_1.jpg");
+  background-size: cover;
+  background-position: center;
+}
+h1 {
+  font-weight: 600;
+  color: white;
+  //font-family: 'adam.cg_proregular', Arial, sans-serif;
+}
+
+// Devices
+@media (max-device-width: $screen-sm) and (orientation: landscape) {
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: $screen-sm) {
+}
+
+/* Medium devices (small desktops, 768px and up) */
+@media (min-width: $screen-md) {
+}
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: $screen-lg) {
+}

@@ -1,0 +1,52 @@
+// ___________________________________
+//
+// Colors
+// ___________________________________
+
+$debug-colors: ( $debug_color_1,
+                $debug_color_2,
+                $debug_color_3,
+                $debug_color_4,
+                $debug_color_5,
+                $debug_color_6,
+                );
+
+@if $auto_background {
+  $i: 1;
+  $list-length: length($debug_colors);
+  @each $debug_color in $debug_colors {
+    div[class*='rbq-cell']:nth-child( #{$list-length}n+#{$i} ) {
+      background-color: $debug_color;
+    }
+    div[class*='rbq-dar-cell']:nth-child( #{$list-length}n+#{$i} ) {
+      background-color: $debug_color;
+    }
+    .debug_color-#{$i} {
+      color: $debug_color !important;
+    }
+    .debug-background-color-#{$i} {
+      background-color: $debug_color !important;
+    }
+    $i: ( $i + 1 );
+  }
+}
+
+@if $boolean_debug {
+  .rbq-array {
+    background-color: $debug_color_3;
+    border: $array-border solid $debug-color-4;
+  }
+  .rbq-subarray {
+    background-color: $debug_color_5;
+    border: $array-border solid $debug-color-6;
+  }
+  .rbq-cell {
+    background-color: $debug_color_2;
+  }
+  $i: 1;
+  @for $i from 1 through $grid-divisions {
+    .rbq-cell-#{$i} {
+      background-color: $debug_color_2;
+    }
+  }
+}
