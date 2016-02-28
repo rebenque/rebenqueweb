@@ -60,9 +60,6 @@ img[class^='rbq-responsive'] {
 /*
  * XS lay-out
  */
-.rbq-container {
-  height: 100vh;
-}
 h1.pad_left_1em {
   padding-left: 1em;
 }
@@ -78,10 +75,21 @@ h1.pad_left_4em {
 h1.pad_right_1em {
   padding-right: 1em;
 }
+.rbq-container {
+  height: 100vh;
+}
 #welcome {
   background-image: url("img/welcome_2.jpg");
   background-size: cover;
   background-position: center;
+  .rbq-array {
+    -webkit-flex-wrap: nowrap; /* Safari 6.1+ */
+    -moz-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+  }
+  .ws_nowrap {
+    white-space: nowrap;
+  }
   h1, h2, h3, h4, h5, h6 {
     margin-right: ($headings-line-height / 2);
     margin-left: ($headings-line-height / 2);
@@ -91,6 +99,7 @@ h1.pad_right_1em {
     color: white;
     font-family: 'clerface-bold', Arial, sans-serif;
     margin: 0;
+    line-height: 1em;
     //font-family: 'futuraef_demibold', Arial, sans-serif
   }
 }
