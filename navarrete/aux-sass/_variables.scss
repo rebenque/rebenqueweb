@@ -42,7 +42,7 @@ $link-hover-decoration: none;
 
 // Fonts
 $font-stack-header:             'Raleway', Helvetica, sans-serif;
-$font-stack-header:             'Libre Baskerville', serif;
+$font-stack-header:             'Futura-Book', sans-serif;
 $font-stack-paragraph:          'Merriweather', Georgia, serif;
 $font-family-base:              $font-stack-paragraph;
 $headings-font-family:          $font-stack-header;
@@ -73,7 +73,7 @@ $line-height-base:              1.428571429em; // 20/14
 
 // Headings
 $headings-font-weight:          400;
-$headings-line-height:          0.8em;
+$headings-line-height:          2em;
 $headings-color:                $typo-color-alternative;
 $headings-small-color:          $theme_color_5;
 
